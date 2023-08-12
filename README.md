@@ -1,4 +1,4 @@
-# ERA-S11
+    # ERA-S11
 
 In this project, we explore the concept of skip connections and delve into the working of the ResNet (Residual Network) architecture, a groundbreaking advancement in deep learning for image classification.
 
@@ -95,7 +95,7 @@ This function is used within the ResNet class to create a sequence of ConvBlock 
 
 ### Skip Connections:
 
-The core concept of skip connections is implemented in the ConvBlock class. The line out += self.shortcut(x) adds the original input x to the output of the second convolutional layer. This bypasses the convolutional layers and directly combines the input with the output, forming a "skip connection." The skip connection ensures that gradient information flows directly through the network layers, mitigating the vanishing gradient problem.
+The core concept of skip connections is implemented in the ConvBlock class. The line `out += self.shortcut(x)` adds the original input x to the output of the second convolutional layer. This bypasses the convolutional layers and directly combines the input with the output, forming a "skip connection." The skip connection ensures that gradient information flows directly through the network layers, mitigating the vanishing gradient problem.
 
 # Results
 
