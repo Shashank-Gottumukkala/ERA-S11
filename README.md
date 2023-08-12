@@ -97,7 +97,26 @@ This function is used within the ResNet class to create a sequence of ConvBlock 
 
 The core concept of skip connections is implemented in the ConvBlock class. The line `out += self.shortcut(x)` adds the original input x to the output of the second convolutional layer. This bypasses the convolutional layers and directly combines the input with the output, forming a "skip connection." The skip connection ensures that gradient information flows directly through the network layers, mitigating the vanishing gradient problem.
 
+## GradCAM
+GradCAM (Gradient-weighted Class Activation Mapping) is a technique used to visualize the areas of an image that contributed the most to a neural network's prediction. It helps in understanding where the network is focusing its attention within an image.
+
+### Why GradCAM?
+
+`Interpretable Insights`: GradCAM provides interpretable visualizations, allowing us to see which parts of an image influenced a certain classification decision.
+
+`Model Understanding`: It helps in understanding whether the model is focusing on the correct features or learning unintended patterns.
+
+`Model Validation`: GradCAM can be used to validate whether a network is making decisions based on relevant image regions.
+
 # Results
+- No of Params: `11,173,962`
+- Best Training Accuracy : `85.81`
+- Best Test Accuracy : `90.25`
+
+
+![image](https://github.com/shashankg69/ERA-S11/assets/59787210/e0406969-3687-4c0e-9f2e-1e486817b477)
+![image](https://github.com/shashankg69/ERA-S11/assets/59787210/311bfc08-84e3-43fa-805a-139c5ebe8bd6)
+
 
 
 
