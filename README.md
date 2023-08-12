@@ -1,6 +1,8 @@
     # ERA-S11
 
-In this project, we explore the concept of skip connections and delve into the working of the ResNet (Residual Network) architecture, a groundbreaking advancement in deep learning for image classification.
+# ResNet Architecture Implementation and GradCAM Visualization on CIFAR-10
+
+This repo contains the  implementation of the original ResNet architecture on the CIFAR-10 dataset and GradCAM for visualization. This document explains the ResNet architecture, skip connections, the significance of GradCAM, and instructions for utilizing the code within the repository.
 
 ## Introduction to ResNet :
 Residual Networks, commonly referred to as ResNets, were introduced by Kaiming He et al. in the paper "Deep Residual Learning for Image Recognition" (2015). ResNets tackle the problem of vanishing gradients in very deep networks by introducing a new architectural element called skip connections, or shortcuts. These skip connections allow the network to learn residual functions instead of the entire transformation, enabling the training of extremely deep networks.
